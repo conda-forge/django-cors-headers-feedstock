@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About django-cors-headers
 =========================
 
@@ -23,8 +19,17 @@ similar to same-domain requests. Read more about it here <http://www.html5rocks.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/django-cors-headers-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/django-cors-headers-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2886&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/django-cors-headers-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
