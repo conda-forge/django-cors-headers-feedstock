@@ -122,4 +122,5 @@ Feedstock Maintainers
 =====================
 
 * [@lsetiawan](https://github.com/lsetiawan/)
+* [@timsnyder](https://github.com/timsnyder/)
 
