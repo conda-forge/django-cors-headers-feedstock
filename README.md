@@ -5,9 +5,11 @@ Home: https://github.com/ottoyiu/django-cors-headers
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-cors-headers-feedstock/blob/master/LICENSE.txt)
 
 Summary: Django app for handling the server headers required for Cross-Origin Resource Sharing (CORS)
+
+Development: https://github.com/ottoyiu/django-cors-headers
 
 A Django App that adds CORS (Cross-Origin Resource Sharing) headers to responses.
 
