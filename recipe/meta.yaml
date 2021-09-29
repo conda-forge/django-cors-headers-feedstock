@@ -11,18 +11,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
-    - django
+    - django >=2.2
 
   run:
-    - python
-    - django
+    - python >=3.6
+    - django >=2.2
 
 test:
   imports:
@@ -48,3 +48,4 @@ extra:
   recipe-maintainers:
     - lsetiawan
     - timsnyder
+    - MichelML
