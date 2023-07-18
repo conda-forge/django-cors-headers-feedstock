@@ -1,32 +1,35 @@
 {% set name = "django-cors-headers" %}
-{% set version = "4.0.0" %}
+{% set version = "4.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a971cd4c75b29974068cc36b5c595698822f1e0edd5f1b32ea42ea37326ad4aa
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django_cors_headers-{{ version }}.tar.gz
+  sha256: f9749c6410fe738278bc2b6ef17f05195bc7b251693c035752d8257026af024f
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
+    - setuptools
     - pip
-    - django >=2.2
-
   run:
-    - python >=3.6
-    - django >=2.2
+    - python >=3.7
+    - django >=3.2
 
 test:
   imports:
     - corsheaders
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/ottoyiu/django-cors-headers
