@@ -154,5 +154,6 @@ Feedstock Maintainers
 
 * [@MichelML](https://github.com/MichelML/)
 * [@lsetiawan](https://github.com/lsetiawan/)
+* [@rxm7706](https://github.com/rxm7706/)
 * [@timsnyder](https://github.com/timsnyder/)
 
