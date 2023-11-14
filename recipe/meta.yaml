@@ -1,13 +1,13 @@
 {% set name = "django-cors-headers" %}
-{% set version = "4.3.0" %}
+{% set version = "4.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django_cors_headers-{{ version }}.tar.gz
-  sha256: 25aabc94d4837678c1edf442c7f68a5f5fd151f6767b0e0b01c61a2179d02711
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 0bf65ef45e606aff1994d35503e6b677c0b26cafff6506f8fd7187f3be840207
 
 build:
   noarch: python
