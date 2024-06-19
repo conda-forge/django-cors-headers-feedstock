@@ -24,6 +24,7 @@ requirements:
     - asgiref >=3.6
     - django >=3.2
 
+test:
   imports:
     - corsheaders
   commands:
